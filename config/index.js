@@ -8,6 +8,9 @@ module.exports = {
     confName: 'conf',
     htmlName: 'html',
     dev: {
+        env: {
+            NODE_ENV: '"development"'
+        },
         // Paths
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
@@ -45,6 +48,9 @@ module.exports = {
     },
 
     build: {
+        env: {
+            NODE_ENV: '"production"'
+        },
         // Template for index.html
         index: path.resolve(__dirname, '../dist/index.html'),
 

@@ -1,3 +1,4 @@
+import '@/assets/js/rootRem';
 import Vue from 'vue';
 import App from '@/mods/index';
 // import router from './router';

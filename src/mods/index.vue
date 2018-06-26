@@ -1,14 +1,16 @@
 <template>
-    <p>工程构建</p>
+    <div>
+        <HomePage></HomePage>
+    </div>
 </template>
 
 <script>
-// import HelloWorld from '../components/HelloWorld';
+import HomePage from '@/components/homepage';
 
 export default {
     name: 'App',
     components: {
-        // HelloWorld
+        HomePage
     }
 };
 </script>

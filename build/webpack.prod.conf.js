@@ -11,8 +11,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin') //抽离css样�
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin') // 压缩处理css的插件
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin') // 压缩处理js的插件
 
-const env = require('../config/prod.env')
-
 const webpackConfig = merge(baseWebpackConfig, {
     module: {
         // 样式文件的处理规则，对css/sass/scss等不同内容使用相应的styleLoaders
@@ -33,7 +31,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     plugins: [
         // http://vuejs.github.io/vue-loader/en/workflow/production.html
         new webpack.DefinePlugin({
-            'process.env': env
+            'process.env': config.build.env
         }),
         // 丑化压缩JS代码
         new UglifyJsPlugin({
