@@ -26,14 +26,18 @@
                     <div class="qrcode">
                         <img src="@/assets/img/miniprogram.png" alt="qrcode for miniprogram">
                     </div>
-                    <img class="icon" src="@/assets/img/miniprogram-logo.png" alt="icon for miniprogram">
+                    <img
+                        class="icon"
+                        src="@/assets/img/miniprogram-logo.png"
+                        alt="icon for miniprogram"
+                    >
                 </div>
             </div>
             <div class="M_center">
                 <div class="item first" @click="goToDetail('blog')">
                     <div class="infos">
                         <p class="title">我的博客</p>
-                        <p class="desc">一个基于vue+grunt的单页博客</p>
+                        <p class="desc">一个基于nuxtjs的单页博客</p>
                     </div>
                     <img class="icon" src="@/assets/img/blog-logo.png" alt="icon for blog">
                 </div>
@@ -51,12 +55,16 @@
                     <div class="item inner-second">
                         <div class="infos">
                             <p class="title">微信公众号</p>
-                            <p class="desc">一个年更的个人公众号</p>
+                            <p class="desc">一个想起来才更的个人公众号</p>
                         </div>
                         <div class="qrcode">
                             <img src="@/assets/img/public.png" alt="qrcode for public number">
                         </div>
-                        <img class="icon" src="@/assets/img/public-logo.png" alt="icon for public number">
+                        <img
+                            class="icon"
+                            src="@/assets/img/public-logo.png"
+                            alt="icon for public number"
+                        >
                     </div>
                 </div>
             </div>
@@ -97,23 +105,23 @@ export default {
         goToDetail(type) {
             let url;
             switch (type) {
-                case 'resume':
-                    url = 'https://resume.feroad.com';
+                case "resume":
+                    url = "https://resume.feroad.com";
                     break;
-                case 'demo':
-                    url = 'https://demo.feroad.com';
+                case "demo":
+                    url = "https://demo.feroad.com";
                     break;
-                case 'start':
-                    url = 'https://start.feroad.com';
+                case "start":
+                    url = "https://start.feroad.com";
                     break;
-                case 'github':
-                    url = 'https://github.com/geekzhanglei';
+                case "github":
+                    url = "https://github.com/geekzhanglei";
                     break;
-                case 'blog':
-                    url = 'https://blog.feroad.com';
+                case "blog":
+                    url = "https://blog.feroad.com";
                     break;
-                case 'weibo':
-                    url = 'https://weibo.com/u/5671859298';
+                case "weibo":
+                    url = "https://weibo.com/u/5671859298";
                     break;
                 default:
                     break;
