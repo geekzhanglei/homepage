@@ -1,3 +1,10 @@
+<!--
+ * @Author: zhanglei
+ * @Date: 2019-10-28 15:34:30
+ * @LastEditors: zhanglei
+ * @LastEditTime: 2019-10-28 17:09:17
+ * @Description:
+ -->
 <template>
     <div class="container">
         <div class="M_title">
@@ -197,7 +204,7 @@ html {
     flex: 1;
     width: 32rem;
     height: 16rem;
-    background-image: url(../assets/img/greenbg.jpg);
+    background:  radial-gradient(circle at 80% 50%, #C8E9BE 15%,#BDE5B1 19%, #BDE5B1 30%, #B2DFA3 31%,#B2DFA3 40%, #A5DA94 41%, #A5DA94 50%,#94D382 51%, #94D382 60%,#80CB6C 60%);
     background-size: 100% 100%;
 }
 .M_left .second {
@@ -252,9 +259,12 @@ html {
     background-color: #144d88;
 }
 .M_right .second {
-    background-image: url(../assets/img/pinkbg.jpg);
+    background:  radial-gradient(circle at left bottom, #FDD5BC 18%,#FBC5A1 19%, #FBC5A1 30%, #FDB17E 31%,#FDB17E 40%, #FA9550 41%, #FA9550 50%,#F88438 51%, #F88438 60%);
     background-size: 100% 100%;
 }
+
+
+
 .M_right .third {
     background-color: #2381e3;
 }
