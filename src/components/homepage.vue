@@ -1,8 +1,8 @@
 <!--
  * @Author: zhanglei
  * @Date: 2019-10-28 15:34:30
- * @LastEditors: zhanglei
- * @LastEditTime: 2019-10-28 17:09:17
+ * @LastEditors  : zhanglei
+ * @LastEditTime : 2020-01-03 19:01:36
  * @Description:
  -->
 <template>
@@ -145,7 +145,8 @@ export default {
 body,
 html {
     height: 100%;
-    font-size: 10px;
+    /* 或者62.5%，或者去掉，不能是10px */
+    font-size: 10px !important;
     color: #fff;
     margin: 0;
     padding: 0;
